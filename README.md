@@ -5,7 +5,7 @@ This project focuses on a comprehensive data analysis of cricket matches, from m
 
 
 ##  Project Overview
-The primary goal of this project is to scrape, process, analyze, and visualize cricket match data from Cricsheet. We extract JSON files for various match types (ODI, T20, Test), store the cleaned data in an SQL database, and build an interactive dashboard using **Streamlit**. The project also involves performing **Exploratory Data Analysis (EDA)** using Python and executing 20 different SQL queries to extract valuable insights.
+The primary goal of this project is to scrape, process, analyze, and visualize cricket match data from Cricsheet. We extract JSON files for various match types (ODI, T20, Test,IPL), store the cleaned data in an SQL database, and build an interactive dashboard using **PowerBI**. The project also involves performing **Exploratory Data Analysis (EDA)** using Python and executing 20 different SQL queries to extract valuable insights.
 
 ##  Skills Developed
 
@@ -13,7 +13,9 @@ The primary goal of this project is to scrape, process, analyze, and visualize c
 - **Data Processing with Python**- Expertise in transforming raw, nested JSON data using the **Pandas** library.
 - **Database Management with SQL**- Practical skills in designing databases, creating tables with appropriate schemas, and writing optimized queries.
 - **Data Analysis**- Ability to formulate and execute complex SQL queries to uncover meaningful insights from large datasets.
-- **Interactive Dashboarding with Streamlit**-Experience in connecting a Python script to a database and creating a dynamic, web-based application to communicate data findings.
+- **Open Power BI Dashboard**-Created interactive visualizations to showcase key insights.
+
+Technology Stack
 - **Data Preprocessing**- Understanding the critical steps of cleaning, structuring, and preparing unstructured data for analysis and storage.
 
 ---
@@ -36,7 +38,7 @@ The primary goal of this project is to scrape, process, analyze, and visualize c
 
 * **Python:** Pandas, Matplotlib, Seaborn, Plotly
 * **SQL:** MySQL/SQLite, SQLAlchemy
-* **Streamlit**
+* **powerBI**
 * **Git & GitHub**
 * **Jupyter Notebook**
 * **Cricsheet:** JSON Data Source
@@ -47,19 +49,19 @@ The primary goal of this project is to scrape, process, analyze, and visualize c
 
 ### 1. Data Scraping
 
-* Manually download JSON files for Test, ODI, T20, and IPL matches from Cricsheet.
+* Manually download JSON files for Test, ODI, T20, and IPL matches from Cricsheet[Cricsheet](https://cricsheet.org/matches/)..
 * Store these files locally for further processing.
 
 ### 2. Data Transformation
 
 * Parse the JSON files using **Pandas**.
-* Create separate DataFrames for each match format (Test, ODI, T20).
+* Create separate DataFrames for each match format (Test, ODI, T20,IPL).
 
 ### 3. Database Management
 
 * Set up an SQL database (e.g., SQLite).
 * Design and create tables: `test_matches`, `odi_matches`, `t20_matches`.
-* Insert the cleaned data into the respective tables using **SQLAlchemy**.
+* Insert the cleaned data into the respective tables using **SQL**.
 
 ### 4. SQL Queries for Data Analysis
 
@@ -76,14 +78,16 @@ Write at least 20 SQL queries to extract insights, such as:
 * Generate 10 visualizations using **Matplotlib**, **Seaborn**, and **Plotly** to highlight key insights.
 * Present findings via graphs and summary statistics.
 
-### 6. Streamlit Dashboard
+### 6. Power BI Dashboard
+- Connect **Power BI** to the SQL database.
+- Create an interactive dashboard featuring:
+  - **Player performance trends (batting, bowling).**
+  - **Match outcomes by teams.**
+  - **Win/loss analysis across different formats.**
+  - **Comparative statistics of teams and players.**
 
-* Connect the Streamlit application to the SQL database.
-* Create an interactive dashboard featuring:
-    * Player performance trends (batting, bowling).
-    * Match outcomes by team.
-    * Win/loss analysis across different formats.
-    * Comparative statistics of teams and players.
+
+
 
 ---
 
@@ -95,6 +99,14 @@ Write at least 20 SQL queries to extract insights, such as:
 * ✅ **EDA Visualizations:** Graphical analysis of key match statistics.
 * ✅ **Streamlit Dashboard:** Interactive and data-driven visual storytelling.
 
+## Dataset Details
+- **Source**: [Cricsheet Match Data](https://cricsheet.org/downloads/)
+- **Format**: JSON files for individual cricket matches.
+- **Variables**: Player statistics (runs, wickets), match results, teams, overs, deliveries.
+- **Preprocessing Steps**:
+  - Load JSON files into Python.
+  - Normalize and flatten nested data.
+  - Clean and structure data for SQL storage.
 
 
 
